@@ -6,11 +6,11 @@
 
 Basic UI of the project:
 
-// To be Updated
+// To be Implemented
 
 UI of the Pop Up:
 
-// To be Updated
+// To be Implemented
 
 ## Built With
 
