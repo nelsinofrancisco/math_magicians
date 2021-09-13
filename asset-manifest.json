@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/math_magicians/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/math_magicians/static/js/main.7f7b0c84.chunk.js",
-    "main.js.map": "/math_magicians/static/js/main.7f7b0c84.chunk.js.map",
-    "runtime-main.js": "/math_magicians/static/js/runtime-main.221b7562.js",
-    "runtime-main.js.map": "/math_magicians/static/js/runtime-main.221b7562.js.map",
-    "static/js/2.9ba51bed.chunk.js": "/math_magicians/static/js/2.9ba51bed.chunk.js",
-    "static/js/2.9ba51bed.chunk.js.map": "/math_magicians/static/js/2.9ba51bed.chunk.js.map",
-    "static/js/3.4942824d.chunk.js": "/math_magicians/static/js/3.4942824d.chunk.js",
-    "static/js/3.4942824d.chunk.js.map": "/math_magicians/static/js/3.4942824d.chunk.js.map",
+    "main.css": "/math_magicians/static/css/main.ddd8bbeb.chunk.css",
+    "main.js": "/math_magicians/static/js/main.22654171.chunk.js",
+    "main.js.map": "/math_magicians/static/js/main.22654171.chunk.js.map",
+    "runtime-main.js": "/math_magicians/static/js/runtime-main.6dac98b7.js",
+    "runtime-main.js.map": "/math_magicians/static/js/runtime-main.6dac98b7.js.map",
+    "static/js/2.8d3c7122.chunk.js": "/math_magicians/static/js/2.8d3c7122.chunk.js",
+    "static/js/2.8d3c7122.chunk.js.map": "/math_magicians/static/js/2.8d3c7122.chunk.js.map",
+    "static/js/3.b80c8c44.chunk.js": "/math_magicians/static/js/3.b80c8c44.chunk.js",
+    "static/js/3.b80c8c44.chunk.js.map": "/math_magicians/static/js/3.b80c8c44.chunk.js.map",
     "index.html": "/math_magicians/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/math_magicians/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.9ba51bed.chunk.js.LICENSE.txt": "/math_magicians/static/js/2.9ba51bed.chunk.js.LICENSE.txt",
+    "static/css/main.ddd8bbeb.chunk.css.map": "/math_magicians/static/css/main.ddd8bbeb.chunk.css.map",
+    "static/js/2.8d3c7122.chunk.js.LICENSE.txt": "/math_magicians/static/js/2.8d3c7122.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/math_magicians/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.221b7562.js",
-    "static/js/2.9ba51bed.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.7f7b0c84.chunk.js"
+    "static/js/runtime-main.6dac98b7.js",
+    "static/js/2.8d3c7122.chunk.js",
+    "static/css/main.ddd8bbeb.chunk.css",
+    "static/js/main.22654171.chunk.js"
   ]
 }
