@@ -1,27 +1,46 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-button-bc-color: #e0e0e0;
+  --border-color: #d9d6d4;
+  --result-bc-color: #858694;
+  --result-font-color: #fff;
+  --operators-bc-color: #f5913e;
+  --button-font-color: #000;
+  --cell-height: 50px;
+  --cell-width: 100px;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+* {
+  font-size: 20px;
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-width));
+  grid-template-rows: repeat(6, var(--cell-height));
+}
+
+.calc-button-style {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  line-height: var(--cell-height);
+}
+
+.result-display {
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.25rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.zero-button {
+  grid-area: 6/1/7/3;
+}
+
+.operators-buttons {
+  background-color: var(--operators-bc-color);
 }
