@@ -3,7 +3,7 @@
   --border-color: #d9d6d4;
   --result-bc-color: #858694;
   --result-font-color: #fff;
-  --operators-bc-color: #F5913E;
+  --operators-bc-color: #f5913e;
   --button-font-color: #000;
   --cell-height: 50px;
   --cell-width: 100px;
@@ -12,6 +12,7 @@
 * {
   font-size: 20px;
 }
+
 .calculator-container {
   display: grid;
   grid-template-columns: repeat(4, var(--cell-width));
