@@ -6,11 +6,7 @@
 
 Basic UI of the project:
 
-// To be Implemented
-
-UI of the Pop Up:
-
-// To be Implemented
+![screenshot](screenshot1.png);
 
 ## Built With
 
