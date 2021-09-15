@@ -25,6 +25,7 @@
   color: var(--button-font-color);
   text-align: center;
   line-height: var(--cell-height);
+  cursor: pointer;
 }
 
 .result-display {
@@ -35,6 +36,7 @@
   padding-right: 0.25rem;
   font-size: 26px;
   font-weight: 600;
+  cursor: default;
 }
 
 .zero-button {
