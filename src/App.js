@@ -4,13 +4,32 @@ import Calculator from './components/Calculator';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      calculatorObj: {
+        total: null,
+        next: null,
+        operation: null,
+      },
+    };
+    this.updateState = this.updateState.bind(this);
+  }
+
+  updateState(obj) {
+    this.setState(
+      {
+        calculatorObj: obj,
+      },
+    );
   }
 
   render() {
+    const { calculatorObj } = this.state;
     return (
       <div className="App">
-        <Calculator />
+        <Calculator
+          updateState={this.updateState}
+          calculatorObj={calculatorObj}
+        />
       </div>
     );
   }

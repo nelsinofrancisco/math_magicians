@@ -1,4 +1,6 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
@@ -6,16 +8,10 @@ export default class Calculator extends React.Component {
     super(props);
     this.calculate = this.calculate.bind(this);
     this.displayResult = this.displayResult.bind(this);
-    this.state = {
-      calculatorObj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-    };
   }
 
   calculate(obj, button) {
+    const { updateState } = this.props;
     let newObj;
     try {
       newObj = calculate(obj, button);
@@ -24,19 +20,18 @@ export default class Calculator extends React.Component {
         total: "Can't perform module operation by 0",
       };
     }
-    this.setState(
-      {
-        calculatorObj: newObj,
-      },
-    );
+
+    this.calculatorObj = newObj;
+    updateState(newObj);
   }
 
   displayResult() {
-    const { calculatorObj } = this.state;
+    const { calculatorObj } = this.props;
     const { total } = calculatorObj;
     const { next } = calculatorObj;
     const { operation } = calculatorObj;
     let result = null;
+
     if (total === null && next === null) {
       result = 0;
     } else if (next !== null && total === null) {
@@ -54,12 +49,12 @@ export default class Calculator extends React.Component {
         result = total;
       }
     }
+
     return result;
   }
 
   render() {
-    const { calculatorObj } = this.state;
-
+    const { calculatorObj } = this.props;
     return (
       <div id="calculator-container" className="calculator-container">
         <div id="result" className="result-display calc-button-style">
@@ -88,3 +83,8 @@ export default class Calculator extends React.Component {
     );
   }
 }
+
+Calculator.propTypes = {
+  updateState: PropTypes.func.isRequired,
+  calculatorObj: PropTypes.object.isRequired,
+};
