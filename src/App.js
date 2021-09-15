@@ -4,20 +4,10 @@ import Calculator from './components/Calculator';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      somethingUseless: true,
-    };
+    this.state = {};
   }
 
   render() {
-    const { somethingUseless } = this.state;
-    if (somethingUseless) {
-      return (
-        <div className="App">
-          <Calculator />
-        </div>
-      );
-    }
     return (
       <div className="App">
         <Calculator />
