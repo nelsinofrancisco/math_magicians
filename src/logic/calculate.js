@@ -16,25 +16,35 @@ function isNumber(item) {
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
-      total: null,
+      total: 0,
       next: null,
       operation: null,
     };
   }
 
   if (isNumber(buttonName)) {
-    if (buttonName === '0' && obj.next === '0') {
-      return {};
-    }
+    // if (buttonName === '0' && obj.next === '0') {
+    //   return {};
+    // }
+
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {
+        if (obj.next === '0') {
+          return { ...obj, next: buttonName };
+        }
         return { ...obj, next: obj.next + buttonName };
       }
       return { ...obj, next: buttonName };
     }
     // If there is no operation, update next and clear the value
     if (obj.next) {
+      if (obj.next === '0') {
+        return {
+          next: buttonName,
+          total: null,
+        };
+      }
       return {
         next: obj.next + buttonName,
         total: null,
@@ -103,7 +113,7 @@ export default function calculate(obj, buttonName) {
 
   // User pressed an operation button and there is an existing operation
   if (obj.operation) {
-    if (obj.total && !obj.next) {
+    if ((obj.total !== (null || undefined)) && !obj.next) {
       return { ...obj, operation: buttonName };
     }
 
@@ -118,7 +128,7 @@ export default function calculate(obj, buttonName) {
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
-    return { operation: buttonName };
+    return { ...obj, operation: buttonName };
   }
 
   // save the operation and shift 'next' into 'total'
