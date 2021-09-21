@@ -6,43 +6,12 @@
   --operators-bc-color: #f5913e;
   --button-font-color: #000;
   --cell-height: 50px;
-  --cell-width: 100px;
+  --cell-width: 125px;
+  --buttons-default-font-size: 20px;
 }
 
 * {
-  font-size: 20px;
-}
-
-.calculator-container {
-  display: grid;
-  grid-template-columns: repeat(4, var(--cell-width));
-  grid-template-rows: repeat(6, var(--cell-height));
-}
-
-.calc-button-style {
-  background-color: var(--primary-button-bc-color);
-  border: 1px solid var(--border-color);
-  color: var(--button-font-color);
-  text-align: center;
-  line-height: var(--cell-height);
-  cursor: pointer;
-}
-
-.result-display {
-  grid-area: 1/1/2/5;
-  background: var(--result-bc-color);
-  color: var(--result-font-color);
-  text-align: right;
-  padding-right: 0.25rem;
-  font-size: 26px;
-  font-weight: 600;
-  cursor: default;
-}
-
-.zero-button {
-  grid-area: 6/1/7/3;
-}
-
-.operators-buttons {
-  background-color: var(--operators-bc-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

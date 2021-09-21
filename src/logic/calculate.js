@@ -81,17 +81,17 @@ export default function calculate(obj, buttonName) {
       };
     }
     // '=' with no operation, nothing to do
-    return {};
+    return { ...obj, operation: null };
   }
 
   if (buttonName === '+/-') {
     if (obj.next) {
       return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
     }
-    if (obj.total) {
+    if (obj.total && !obj.operation) {
       return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
     }
-    return {};
+    return { ...obj };
   }
 
   // Button must be an operation

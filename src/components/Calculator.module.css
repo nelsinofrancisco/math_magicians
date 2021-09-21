@@ -1,0 +1,44 @@
+.calculatorContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--cell-width) var(--cell-width) var(--cell-width) var(--cell-width);
+  -ms-grid-rows: var(--cell-height) var(--cell-height) var(--cell-height) var(--cell-height);
+  max-width: calc(var(--cell-width) * 4);
+}
+
+.calcButtonStyle {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  font-size: var(--buttons-default-font-size);
+  line-height: var(--cell-height);
+  cursor: pointer;
+}
+
+.resultDisplay {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.25rem;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.zeroButton {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 6/1/7/3;
+}
+
+.operatorsButtons {
+  background-color: var(--operators-bc-color);
+}
