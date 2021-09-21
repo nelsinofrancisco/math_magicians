@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import './index.css';
-import Calculator from './components/Calculator';
+import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator />
+    <Router>
+      <Home />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );

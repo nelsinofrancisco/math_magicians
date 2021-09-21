@@ -1,8 +1,10 @@
 .calculatorContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: var(--cell-width) var(--cell-width) var(--cell-width) var(--cell-width);
+  -ms-grid-columns: minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width));
+  grid-template-columns: repeat(4, minmax(50px, var(--cell-width)));
   -ms-grid-rows: var(--cell-height) var(--cell-height) var(--cell-height) var(--cell-height);
+  grid-template-rows: repeat(6, minmax(25px, var(--cell-height)));
   max-width: calc(var(--cell-width) * 4);
 }
 

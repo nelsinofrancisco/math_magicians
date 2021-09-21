@@ -1,0 +1,57 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+.logoTitle {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.linksListContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linksItems {
+  list-style: none;
+  font-size: 18px;
+  padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+  border-left: 2px solid gray;
+}
+
+.linksItems:first-child {
+  padding: 0.15rem 0.5rem 0.15rem 0rem;
+  border-left: none;
+}
+
+.linksItems:last-child {
+  padding: 0.15rem 0rem 0.15rem 0.5rem;
+}
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+
+}
+
+.menuButton:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.expandedMenuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 0.5rem;
+  position: absolute;
+  right: 0.8rem;
+}
+
+.expandedLinksContainer {
+  list-style: none;
+  width: min-content;
+}
