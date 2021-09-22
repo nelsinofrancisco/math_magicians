@@ -12,19 +12,19 @@ const ExpandedMobMenu = (props) => {
         <IoMdClose />
       </button>
       <ul className={styles.expandedLinksContainer}>
-        <li className={styles.linksItems}>
-          <NavLink to="/" activeClassName="active-link" exact onClick={() => closeButton(false)}>
+        <li className={styles.linksItemsExpanded}>
+          <NavLink to="/" activeClassName="active-link" exact onClick={() => closeButton(false)} className={styles.anchorItem}>
             Home
           </NavLink>
         </li>
-        <li className={styles.linksItems}>
-          <NavLink to="/calculator" activeClassName="active-link" exact onClick={() => closeButton(false)}>
+        <li className={styles.linksItemsExpanded}>
+          <NavLink to="/calculator" activeClassName="active-link" exact onClick={() => closeButton(false)} className={styles.anchorItem}>
             Calculator
           </NavLink>
 
         </li>
-        <li className={styles.linksItems}>
-          <NavLink to="/quote" activeClassName="active-link" exact onClick={() => closeButton(false)}>
+        <li className={styles.linksItemsExpanded}>
+          <NavLink to="/quote" activeClassName="active-link" exact onClick={() => closeButton(false)} className={styles.anchorItem}>
             Quote
           </NavLink>
         </li>

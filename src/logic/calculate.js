@@ -102,6 +102,14 @@ export default function calculate(obj, buttonName) {
   //   return {};
   // }
 
+  if (obj.total && (obj.total === "Can't divide by 0." || obj.total === 'Result is undefined.')) {
+    return {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+  }
+
   // User pressed an operation after pressing '='
   if (!obj.next && obj.total && !obj.operation) {
     return { ...obj, operation: buttonName };

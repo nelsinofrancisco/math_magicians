@@ -1,13 +1,18 @@
 .navContainer {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
-  margin-bottom: 4rem;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  background-color: var(--header-bc-color);
 }
 
 .logoTitle {
   font-size: 32px;
   font-weight: 700;
+  color: var(--primary-fc-color);
 }
 
 .linksListContainer {
@@ -18,40 +23,67 @@
 .linksItems {
   list-style: none;
   font-size: 18px;
+  color: var(--primary-fc-color);
   padding: 0.15rem 0.5rem 0.15rem 0.5rem;
-  border-left: 2px solid gray;
+  border-left: 2px solid var(--primary-fc-color);
+  text-decoration: none;
+}
+
+.linksItemsExpanded {
+  list-style: none;
+  font-size: 18px;
+  color: var(--primary-fc-color);
+  padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+  border-bottom: 1px solid var(--primary-fc-color);
+  text-decoration: none;
+}
+
+.linksItemsExpanded > a {
+  border: none;
+}
+
+.linksItemsExpanded:last-child {
+  border: none;
 }
 
 .linksItems:first-child {
-  padding: 0.15rem 0.5rem 0.15rem 0rem;
+  padding: 0.15rem 0.5rem 0.15rem 0;
   border-left: none;
 }
 
 .linksItems:last-child {
-  padding: 0.15rem 0rem 0.15rem 0.5rem;
+  padding: 0.15rem 1rem 0.15rem 0.5rem;
 }
 
 .menuButton {
-  background-color: transparent;
+  background-color: var(--header-bc-color);
+  display: flex;
+  justify-content: flex-end;
   border: none;
-
+  color: var(--primary-fc-color);
+  font-size: 24px;
+  line-height: 50px;
 }
 
 .menuButton:hover {
-  background-color: transparent;
+  background-color: var(--header-bc-color);
   border: none;
 }
 
 .expandedMenuContainer {
   display: flex;
+  position: fixed;
   flex-direction: column;
-  align-items: flex-end;
   padding-top: 0.5rem;
-  position: absolute;
   right: 0.8rem;
 }
 
 .expandedLinksContainer {
   list-style: none;
-  width: min-content;
+  background-color: var(--header-bc-color);
+}
+
+.anchorItem {
+  color: var(--primary-fc-color);
+  text-decoration: none;
 }

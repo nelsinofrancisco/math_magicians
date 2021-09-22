@@ -1,17 +1,27 @@
 :root {
-  --primary-button-bc-color: #e0e0e0;
-  --border-color: #d9d6d4;
-  --result-bc-color: #858694;
+  --primary-button-bc-color: #589D74;
+  --border-color: #F8DFDD;
+  --result-bc-color: #E7A636;
   --result-font-color: #fff;
-  --operators-bc-color: #f5913e;
-  --button-font-color: #000;
+  --operators-bc-color: #F2CF92;
+  --button-font-color: #fff;
   --cell-height: 50px;
   --cell-width: 125px;
   --buttons-default-font-size: 20px;
+  --background-color: #3C153B;
+  --header-bc-color: #8B1E3F;
+  --primary-fc-color: #F0C987;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body,
+#root {
+  background-color: var(--background-color);
+  height: 100%;
 }

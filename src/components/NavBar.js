@@ -22,18 +22,18 @@ const NavBar = () => {
           : (
             <ul className={styles.linksListContainer}>
               <li className={styles.linksItems}>
-                <NavLink to="/" activeClassName="active-link" exact>
+                <NavLink to="/" activeClassName="active-link" className={styles.anchorItem} exact>
                   Home
                 </NavLink>
               </li>
               <li className={styles.linksItems}>
-                <NavLink to="/calculator" activeClassName="active-link" exact>
+                <NavLink to="/calculator" activeClassName="active-link" className={styles.anchorItem} exact>
                   Calculator
                 </NavLink>
 
               </li>
               <li className={styles.linksItems}>
-                <NavLink to="/quote" activeClassName="active-link" exact>
+                <NavLink to="/quote" activeClassName="active-link" className={styles.anchorItem} exact>
                   Quote
                 </NavLink>
               </li>

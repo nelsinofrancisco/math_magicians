@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
 import './index.css';
-import Home from './pages/Home';
+import Home from './components/Home';
 
 ReactDOM.render(
   <React.StrictMode>
