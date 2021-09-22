@@ -1,16 +1,16 @@
 :root {
-  --primary-button-bc-color: #589D74;
-  --border-color: #F8DFDD;
-  --result-bc-color: #E7A636;
+  --primary-button-bc-color: #589d74;
+  --border-color: #f8dfdd;
+  --result-bc-color: #e7a636;
   --result-font-color: #fff;
-  --operators-bc-color: #F2CF92;
+  --operators-bc-color: #f2cf92;
   --button-font-color: #fff;
   --cell-height: 50px;
   --cell-width: 125px;
   --buttons-default-font-size: 20px;
-  --background-color: #3C153B;
-  --header-bc-color: #8B1E3F;
-  --primary-fc-color: #F0C987;
+  --background-color: #3c153b;
+  --header-bc-color: #8b1e3f;
+  --primary-fc-color: #f0c987;
 }
 
 * {

@@ -10,7 +10,6 @@ export default function Calculator() {
   const [calculatorObj, setCalculatorObj] = useState({ total: 0, next: null, operation: null });
 
   const updateCalculation = (calculatorObj, value) => {
-    console.log(calculatorObj);
     setCalculatorObj(calculate(calculatorObj, value));
   };
 
