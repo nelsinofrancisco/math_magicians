@@ -1,0 +1,89 @@
+.navContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  background-color: var(--header-bc-color);
+}
+
+.logoTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-fc-color);
+}
+
+.linksListContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linksItems {
+  list-style: none;
+  font-size: 18px;
+  color: var(--primary-fc-color);
+  padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+  border-left: 2px solid var(--primary-fc-color);
+  text-decoration: none;
+}
+
+.linksItemsExpanded {
+  list-style: none;
+  font-size: 18px;
+  color: var(--primary-fc-color);
+  padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+  border-bottom: 1px solid var(--primary-fc-color);
+  text-decoration: none;
+}
+
+.linksItemsExpanded > a {
+  border: none;
+}
+
+.linksItemsExpanded:last-child {
+  border: none;
+}
+
+.linksItems:first-child {
+  padding: 0.15rem 0.5rem 0.15rem 0;
+  border-left: none;
+}
+
+.linksItems:last-child {
+  padding: 0.15rem 1rem 0.15rem 0.5rem;
+}
+
+.menuButton {
+  background-color: var(--header-bc-color);
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  color: var(--primary-fc-color);
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.menuButton:hover {
+  background-color: var(--header-bc-color);
+  border: none;
+}
+
+.expandedMenuContainer {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  right: 0.8rem;
+}
+
+.expandedLinksContainer {
+  list-style: none;
+  background-color: var(--header-bc-color);
+}
+
+.anchorItem {
+  color: var(--primary-fc-color);
+  text-decoration: none;
+}

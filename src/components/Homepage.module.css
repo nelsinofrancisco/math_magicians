@@ -1,0 +1,45 @@
+.HomepageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  padding-top: 100px;
+}
+
+.HomepageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-fc-color);
+  margin-bottom: 2rem;
+}
+
+.HomepageParagraph {
+  max-width: 100%;
+  color: var(--primary-fc-color);
+  margin-bottom: 3rem;
+}
+
+.decorationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.HomepageHat {
+  position: relative;
+  width: 100px;
+  bottom: 15%;
+  right: 5%;
+  z-index: 1;
+}
+
+.HomepageStars {
+  position: relative;
+  width: 200px;
+  bottom: 5%;
+  left: 5%;
+  z-index: 1;
+}

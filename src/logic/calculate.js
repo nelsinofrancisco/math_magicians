@@ -81,17 +81,17 @@ export default function calculate(obj, buttonName) {
       };
     }
     // '=' with no operation, nothing to do
-    return {};
+    return { ...obj, operation: null };
   }
 
   if (buttonName === '+/-') {
     if (obj.next) {
       return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
     }
-    if (obj.total) {
+    if (obj.total && !obj.operation) {
       return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
     }
-    return {};
+    return { ...obj };
   }
 
   // Button must be an operation
@@ -101,6 +101,14 @@ export default function calculate(obj, buttonName) {
   // if (!obj.next && !obj.total) {
   //   return {};
   // }
+
+  if (obj.total && (obj.total === "Can't divide by 0." || obj.total === 'Result is undefined.')) {
+    return {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+  }
 
   // User pressed an operation after pressing '='
   if (!obj.next && obj.total && !obj.operation) {

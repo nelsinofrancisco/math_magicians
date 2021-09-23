@@ -1,0 +1,11 @@
+.quoteContainer {
+  padding: 1rem;
+  padding-top: 100px;
+}
+
+.quoteTitle {
+  color: var(--primary-fc-color);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}

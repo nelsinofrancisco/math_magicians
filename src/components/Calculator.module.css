@@ -1,0 +1,70 @@
+.calculatorPageContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-top: 100px;
+}
+
+.calculatorContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width)) minmax(50px, var(--cell-width));
+  grid-template-columns: repeat(4, minmax(50px, var(--cell-width)));
+  -ms-grid-rows: var(--cell-height) var(--cell-height) var(--cell-height) var(--cell-height);
+  grid-template-rows: repeat(6, minmax(25px, var(--cell-height)));
+  max-width: calc(var(--cell-width) * 4);
+  max-height: calc(var(--cell-height) * 6);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--border-color);
+}
+
+.calcButtonStyle {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  font-size: var(--buttons-default-font-size);
+  line-height: var(--cell-height);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.resultDisplay {
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.25rem;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.zeroButton {
+  grid-area: 6/1/7/3;
+}
+
+.operatorsButtons {
+  background-color: var(--operators-bc-color);
+}
+
+.calculatorTitle {
+  color: var(--primary-fc-color);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.calculatorParagraph {
+  color: var(--primary-fc-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.logoImg {
+  width: 500px;
+  margin-bottom: 3rem;
+}
