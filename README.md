@@ -16,6 +16,8 @@ Basic UI of the project:
 ## Live Demo
 
 [Live Demo Link](https://nelsinofrancisco.github.io/math_magicians/)
+[Netlify Demo Link](https://nelsino-math-magicians.netlify.app/#/)
+[Heroku Demo Link](https://nelsino-math-magicians.herokuapp.com/#/)
 
 ## Project Description (Loom Video)
 
